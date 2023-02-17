@@ -28,49 +28,49 @@
         <div class="mx-8 md:flex lg:flex gap-6 ">
             <div class="w-[65%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 mt-6">
                 <!-- Triangle-->
-        <div class="card bg-slate-200 shadow-2xl">
+        <div class="card bg-slate-200 hover:bg-red-200 shadow-2xl">
             <figure class="px-10 pt-10">
               <img class="ing-fluid " src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+              <h2 id="text" class="card-title">Triangle</h2>
               <p>Area (A) = 0.5 *b*h</p>
             
               <div class="ml-2">
-               <input class="w-[35%] px-5" type="text" placeholder="b">
+               <input id="tri2" class="w-[35%] px-5" type="text" placeholder="b">
                <label for="">cm</label>
                
-               <input class="w-[35%] px-5 " type="text" placeholder="h">
+               <input id="tri" class="w-[35%] px-5 " type="text" placeholder="h">
                <label for="">cm</label>
               </div>
               <div class="card-actions mt-2 ">
-                <button class="btn btn-primary button">Culculate</button>
+                <button id="btn1" class="btn btn-primary button">Culculate</button>
               </div>
             </div>
           </div>
           <!-- Rectangle -->
-        <div class="card bg-slate-200 shadow-2xl">
+        <div class="card bg-slate-200 hover:bg-red-200 shadow-2xl">
             <figure class="px-10 pt-10">
               <img class="ing-fluid " src="/images/rectangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangle</h2>
+              <h2 id="rec" class="card-title">Rectangle</h2>
               <p>Area (A) = w   *   I</p>
             
               <div class="ml-2">
-               <input class="w-[35%] px-5" type="text" placeholder="W">
+               <input id="rec2" class="w-[35%] px-5" type="text" placeholder="W">
                <label for="">cm</label>
                
-               <input class="w-[35%] px-5 " type="text" placeholder="I">
+               <input id="rec1" class="w-[35%] px-5 " type="text" placeholder="I">
                <label for="">cm</label>
               </div>
               <div class="card-actions mt-2 ">
-                <button class="btn btn-primary button">Culculate</button>
+                <button id="btn-rec" class="btn btn-primary button">Culculate</button>
               </div>
             </div>
           </div>
           <!-- Parallelogram -->
-        <div class="card  bg-slate-200 shadow-2xl">
+        <div class="card  bg-slate-200 hover:bg-red-200 shadow-2xl">
             <figure class="px-10 pt-10">
               <img class="ing-fluid " src="/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -92,7 +92,7 @@
             </div>
           </div>
           <!-- Rhombus-->
-        <div class="card  bg-slate-200 shadow-2xl">
+        <div class="card  bg-slate-200 hover:bg-red-200 shadow-2xl">
             <figure class="px-10 pt-10">
               <img class="ing-fluid " src="/images/rhombus.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -114,7 +114,7 @@
             </div>
           </div>
           <!-- Pentagon -->
-        <div class="card  bg-slate-200 shadow-2xl">
+        <div class="card  bg-slate-200 hover:bg-red-200 shadow-2xl">
             <figure class="px-10 pt-10">
               <img class="ing-fluid " src="/images/pentagon.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -136,7 +136,7 @@
             </div>
           </div>
           <!-- Ellipse -->
-        <div class="card  bg-slate-200 shadow-2xl">
+        <div class="card  bg-slate-200 hover:bg-red-200 shadow-2xl">
             <figure class="px-10 pt-10">
               <img class="ing-fluid " src="/images/ellipse.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -160,22 +160,21 @@
        
         </div>
         <!-- flex Second Part -->
-        <div class="Total ml-10 w-[80%] md:w-[30%] lg:w-[30%] h-[600px] bg-slate-200 rounded-xl mt-6  ">
+        <div class="Total ml-10 w-[80%] md:w-[30%] lg:w-[30%] h-[600px] bg-slate-200 hover:bg-red-200 rounded-xl mt-6  ">
             <div class="text-center  mt-6">
                 <h1 class="text-2xl text-center underline underline-offset-8">Area Calculation</h1>
             
             <!-- table -->
             <div class="mt-2 table-Row">
               <table class=" w-full md: w-full lg:w-[90%] ">
-                
                 <thead>
-                  <tr  >
+                  <tr>
                     <th>no</th>
                     <th>Name</th>
                     <th>Total</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-container">
                 
                  
                  
