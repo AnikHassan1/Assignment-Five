@@ -1,3 +1,3 @@
-document.getElementById('btn').addEventListener('click',function(){
-    console.log("clicked");
+document.getElementById('btn-blog').addEventListener('click',function(){
+    window.location='second.html';
 })

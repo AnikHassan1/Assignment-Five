@@ -19,13 +19,13 @@
             </div>
             
             <div class="navbar-end">
-              <a class="btn btn btn-primary">Blog</a>
+              <a id="btn-blog" class="btn btn btn-primary">Blog</a>
             </div>
           </div>
           <!-- Nav Var Start -->
     </header>
-    <Main class="mx-24 mt-4 mx-16 shadow-lg ">
-        <div class="flex gap-6">
+    <Main class="mx-16 mt-4 mx-16 shadow-lg ">
+        <div class="mx-8 md:flex lg:flex gap-6 ">
             <div class="w-[65%] grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12 mt-6">
                 <!-- Triangle-->
         <div class="card bg-slate-200 shadow-2xl">
@@ -78,11 +78,12 @@
               <h2 class="card-title">Parallelogram</h2>
               <p>Area (A) = b   *    h</p>
             
-              <div class="ml-2">
-               <input class="w-[35%] px-5" type="text" placeholder="b">
+              <div class="ml-2 text-left">
+                <label for="">b:</label>
+               <input class="w-[25%] px-3 " type="text" placeholder="10">
                <label for="">cm</label>
-               
-               <input class="w-[35%] px-5 " type="text" placeholder="h">
+               <label for="">h:</label>
+               <input class="w-[25%] px-3 " type="text" placeholder="12">
                <label for="">cm</label>
               </div>
               <div class="card-actions mt-2 ">
@@ -99,8 +100,13 @@
               <h2 class="card-title">Rhombus</h2>
               <p>Area (A) = 0.5 *d <sub>1</sub>*d <sub>2</sub></p>
             
-              <div class="ml-2">
-              <p>d <sub>1</sub> = <span>16</span> cm    d<sub>1</sub> = <span>16</span> cm</p>
+              <div class=" text-left">
+                <label for="">d <sub>1</sub></label>
+               <input class="w-[22%] px-3 " type="text" placeholder="16">
+               <label for="">cm</label>
+               <label for="">d <sub>2</sub></label>
+               <input class="w-[22%] px-3 " type="text" placeholder="8">
+               <label for="">cm</label>
               </div>
               <div class="card-actions mt-2 ">
                 <button class="btn btn-primary button">Culculate</button>
@@ -113,14 +119,15 @@
               <img class="ing-fluid " src="/images/pentagon.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <p>Area (A) = 0.5 *b*h</p>
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area (A) = 0.5 *p*b</p>
             
-              <div class="ml-2">
-               <input class="w-[35%] px-5" type="text" placeholder="b">
+              <div class="ml-2 text-left">
+                <label for="">p:</label>
+               <input class="w-[25%] px-3 " type="text" placeholder="6">
                <label for="">cm</label>
-               
-               <input class="w-[35%] px-5 " type="text" placeholder="h">
+               <label for="">b:</label>
+               <input class="w-[25%] px-3 " type="text" placeholder="10">
                <label for="">cm</label>
               </div>
               <div class="card-actions mt-2 ">
@@ -134,14 +141,15 @@
               <img class="ing-fluid " src="/images/ellipse.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
-              <p>Area (A) = 0.5 *b*h</p>
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area (A) = 3.1416 *a*b</p>
             
-              <div class="ml-2">
-               <input class="w-[35%] px-5" type="text" placeholder="b">
+              <div class="ml-2 text-left">
+                <label for="">a:</label>
+               <input class="w-[25%] px-3 " type="text" placeholder="10">
                <label for="">cm</label>
-               
-               <input class="w-[35%] px-5 " type="text" placeholder="h">
+               <label for="">b:</label>
+               <input class="w-[25%] px-3 " type="text" placeholder="4">
                <label for="">cm</label>
               </div>
               <div class="card-actions mt-2 ">
@@ -151,10 +159,30 @@
           </div>
        
         </div>
-        <div class="Total w-[30%] h-[600px] bg-slate-200 rounded-xl mt-6 ">
+        <!-- flex Second Part -->
+        <div class="Total ml-10 w-[80%] md:w-[30%] lg:w-[30%] h-[600px] bg-slate-200 rounded-xl mt-6  ">
             <div class="text-center  mt-6">
                 <h1 class="text-2xl text-center underline underline-offset-8">Area Calculation</h1>
+            
+            <!-- table -->
+            <div class="mt-2 table-Row">
+              <table class=" w-full md: w-full lg:w-[90%] ">
+                
+                <thead>
+                  <tr  >
+                    <th>no</th>
+                    <th>Name</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                 
+                 
+                </tbody>
+              </table>
             </div>
+          </div>
         </div>
     </div>
     </Main>
