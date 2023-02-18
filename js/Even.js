@@ -1,5 +1,5 @@
-document.getElementById('btn-first').addEventListener('click',function(){
-    window.location .href='Secound.html';
+document.getElementById('btn-first').addEventListener('click', function () {
+    window.location.href = 'Secound.html';
 })
 
 //      The Project use of Dom Fuction. <!-- Part 1:  Triangle-->
@@ -8,9 +8,9 @@ document.getElementById('btn-triangel').addEventListener('click', function () {
     serial += 1;
     const name = innertextElement('Inner-Text');
     const fristInput = inputElementValue('triangel-1');
-  
+
     const secoundInputValue = inputElementValue('triangel-2');
-  
+
     const totalValue = 0.5 * fristInput * secoundInputValue;
     const Trangglevalue = totalValue.toFixed(2);
     displayData(name, Trangglevalue);
@@ -42,15 +42,11 @@ document.getElementById('Rhombus-btn').addEventListener('click', function () {
     const name = innertextElement('Rhombus-text');
     const rhombusInput = inputElementValue('Rhombus-1');
     const rhombusInputValue = inputElementValue('Rhombus-2');
-    if (rhombusInput <= 0 ||
-         rhombusInputValue <=0) {
-        const sms = alert('Enter d1 & d2 Number');
-        return sms;
-    } else {
+    
         const rhomsbusTotal = 0.5 * rhombusInput * rhombusInputValue;
         const rhombusValue = rhomsbusTotal.toFixed(2);
         displayData(name, rhombusValue);
-    }
+    
 })
 // <!--Part 5: Pentagon -->
 document.getElementById('btn-Pentagon').addEventListener('click', function () {
@@ -78,7 +74,7 @@ function inputElementValue(id) {
     const elementInput = document.getElementById(id);
     const elementString = elementInput.value;
     const elementValue = parseInt(elementString);
-    elementInput.value='';
+    elementInput.value = '';
     return elementValue;
 }
 //   Commond function  Using By innertext.
