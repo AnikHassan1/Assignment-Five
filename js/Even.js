@@ -2,115 +2,102 @@ document.getElementById('btn-first').addEventListener('click',function(){
     window.location .href='Secound.html';
 })
 
-
-
-//   Start Dom Fuction use The Project.
+//      The Project use of Dom Fuction. <!-- Part 1:  Triangle-->
 let serial = 0;
-document.getElementById('btn1').addEventListener('click', function () {
+document.getElementById('btn-triangel').addEventListener('click', function () {
     serial += 1;
-    const name = text('text');
-    const tri = common('tri');
+    const name = innertextElement('Inner-Text');
+    const fristInput = inputElementValue('triangel-1');
   
-    const tri2 = common('tri2');
+    const secoundInputValue = inputElementValue('triangel-2');
   
-    const triTotal = 0.5 * tri * tri2;
-    const value = triTotal.toFixed(2);
-    displayData(name, value);
-
+    const totalValue = 0.5 * fristInput * secoundInputValue;
+    const Trangglevalue = totalValue.toFixed(2);
+    displayData(name, Trangglevalue);
 })
-// rec
 
-document.getElementById('btn-rec').addEventListener('click', function () {
+//<!--Part 2: Rectangle -->
+document.getElementById('btn-Rectangle').addEventListener('click', function () {
     serial += 1;
-    const name = text('rec');
-    const tri = common('rec1');
-    const tri2 = common('rec2');
-    const triTotal = tri * tri2;
-    const value = triTotal.toFixed(2);
-    displayData(name, value);
+    const name = innertextElement('Rectangle-Text');
+    const RectangleInputElement = inputElementValue('Rectangle-1');
+    const inputRectangle = inputElementValue('Rectangle-2');
+    const ractangleTotal = RectangleInputElement * inputRectangle;
+    const rcttangleValue = ractangleTotal.toFixed(2);
+    displayData(name, rcttangleValue);
 })
-// <!-- Parallelogram -->
-document.getElementById('btn-para').addEventListener('click', function () {
+//  <!--Part 3: Parallelogram -->
+document.getElementById('btn-Paral').addEventListener('click', function () {
     serial += 1;
-    const name = text('para');
-    const tri = common('para2');
-    const tri2 = common('para1');
-    const triTotal = tri * tri2;
-    const value = triTotal.toFixed(2);
-    displayData(name, value);
-   
+    const name = innertextElement('paral-text');
+    const inputPara = inputElementValue('paral-1');
+    const inputParaValue = inputElementValue('paral-2');
+    const paralTotal = inputPara * inputParaValue;
+    const paraValue = paralTotal.toFixed(2);
+    displayData(name, paraValue);
 })
-// <!-- Rhombus-->
-document.getElementById('btn-rhom').addEventListener('click', function () {
-
+//  <!--Part 4: Rhombus-->
+document.getElementById('Rhombus-btn').addEventListener('click', function () {
     serial += 1;
-    const name = text('rhom');
-    const tri = common('rhom1');
-    const tri2 = common('rhom2');
-    
-    if (tri <= 0 ||
-         tri2 <=0) {
+    const name = innertextElement('Rhombus-text');
+    const rhombusInput = inputElementValue('Rhombus-1');
+    const rhombusInputValue = inputElementValue('Rhombus-2');
+    if (rhombusInput <= 0 ||
+         rhombusInputValue <=0) {
         const sms = alert('Enter d1 & d2 Number');
         return sms;
     } else {
-        const triTotal = 0.5 * tri * tri2;
-        const value = triTotal.toFixed(2);
-        displayData(name, value);
-        
+        const rhomsbusTotal = 0.5 * rhombusInput * rhombusInputValue;
+        const rhombusValue = rhomsbusTotal.toFixed(2);
+        displayData(name, rhombusValue);
     }
-
-
 })
-// pen
-document.getElementById('btn-pen').addEventListener('click', function () {
+// <!--Part 5: Pentagon -->
+document.getElementById('btn-Pentagon').addEventListener('click', function () {
     serial += 1;
-    const name = text('pen');
-    const tri = common('pen1');
-    const tri2 = common('pen2');
-    const triTotal = 0.5 * tri * tri2;
-    const value = triTotal.toFixed(2);
-    displayData(name, value);
+    const name = innertextElement('Pentagon');
+    const pentagonInput = inputElementValue('Pentagon-1');
+    const pentagonInputValue = inputElementValue('Pentagon-2');
+    const pentagonTotal = 0.5 * pentagonInput * pentagonInputValue;
+    const pentagonValue = pentagonTotal.toFixed(2);
+    displayData(name, pentagonValue);
 })
-// eli
-document.getElementById('btn-ELi').addEventListener('click', function () {
+//       <!--Part 6: Ellipse -->
+document.getElementById('btn-Ellipse').addEventListener('click', function () {
     serial += 1;
-    const name = text('eli');
-    const tri = common('eli1');
-    const tri2 = common('eli2');
-    const triTotal = 3.1416 * tri * tri2;
-    const value = triTotal.toFixed(2);
-
-    
-    displayData(name, value);
+    const name = innertextElement('Ellipse');
+    const ellipseInput = inputElementValue('Ellipse-1');
+    const ellipseInputValue = inputElementValue('Ellipse-2');
+    const elliipsTotal = 3.1416 * ellipseInput * ellipseInputValue;
+    const ellipsValue = elliipsTotal.toFixed(2);
+    displayData(name, ellipsValue);
 })
 
-//  Using By Commond function  of Input Value.
-function common(id) {
-    const commonInput = document.getElementById(id);
-    const commonString = commonInput.value;
-    const commonValue = parseInt(commonString);
-    commonInput.value='';
-    return commonValue;
+//   Commond function  Using By Input Value.
+function inputElementValue(id) {
+    const elementInput = document.getElementById(id);
+    const elementString = elementInput.value;
+    const elementValue = parseInt(elementString);
+    elementInput.value='';
+    return elementValue;
 }
-
-//  Using By Commond function  of innertext.
-function text(text) {
+//   Commond function  Using By innertext.
+function innertextElement(text) {
     const Text = document.getElementById(text);
-    const TextValue = Text.innerText;
-    return TextValue;
+    const TextValueIInner = Text.innerText;
+    return TextValueIInner;
 }
-// creatre Element By Html File .
-function displayData(Name, total) {
+//  Html File By creatre Element  .
+function displayData(Name, totalInputValue) {
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${serial}</td>
       <td>${Name}</td>
-      <td>${total}cm <sup>2</sup></td>
+      <td>${totalInputValue}cm <sup>2</sup></td>
       <td>
       <button id="btn-con" class="btn btn-sm btn-red-500  lg:w-full button">Convert To m <sup>2</sup> </button>
       </td>
     `;
     container.appendChild(tr);
-
 }
