@@ -25,7 +25,7 @@ function displayData(Name, total) {
       <td>${Name}</td>
       <td>${total}cm <sup>2</sup></td>
       <td>
-      <button class="btn btn-sm btn-red-500">Convert To m<sup>2</sup> </button>
+      <button class="btn btn-sm btn-red-500  lg:w-full button">Convert To m <sup>2</sup> </button>
       </td>
     `;
     container.appendChild(tr);

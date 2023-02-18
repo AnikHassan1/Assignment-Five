@@ -10,9 +10,14 @@
     margin-left:5px;
     gap: 10px;
 }
-/* @media screen and (min-width:676)and (max-width:1280) {
+/* .button{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 2px 2px;
+} */
+/* @media screen and (min-width:576) {
     .button{
-        
-        width: 20px ;
-    } 
+        width: 10px;
+        height: 50px;
+    }
 } */
